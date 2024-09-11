@@ -4,6 +4,7 @@ import HTML from "./components/3_organisms/HTML/HTML.tsx"
 import CSS from "./components/3_organisms/CSS/CSS.tsx"
 import BEM from "./components/3_organisms/BEM/BEM.tsx"
 import UiKit from "./components/3_organisms/UiKit/UiKit.tsx"
+import Ex1 from "./components/3_organisms/Exercises/Ex1.tsx"
 
 function App() {
   return (
@@ -42,6 +43,8 @@ function App() {
           <BEM />
 
           <UiKit />
+
+          <Ex1 />
 
           <section className={"monitor"}></section>
 

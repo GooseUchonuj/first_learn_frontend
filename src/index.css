@@ -2,6 +2,8 @@
 margin: 0;
 padding: 0;}
 
+/* all */
+
 div.main-container {
     display: flex;
     flex-direction: row;
@@ -71,6 +73,9 @@ h2{
 h3{
     padding: 2vh;
 }
+
+/* for css
+ */
 
 li.example_em {
     display: flex;
