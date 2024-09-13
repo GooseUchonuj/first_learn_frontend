@@ -74,8 +74,7 @@ h3{
     padding: 2vh;
 }
 
-/* for css
- */
+/* for css*/
 
 li.example_em {
     display: flex;
@@ -99,3 +98,4 @@ ul.point {
 
 .about_rem
 {font-size: 0.9em;}
+

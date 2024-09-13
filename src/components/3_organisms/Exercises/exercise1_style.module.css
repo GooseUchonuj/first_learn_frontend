@@ -1,0 +1,42 @@
+* {box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+
+/* for exercises */
+
+div.avito_mainblock
+{display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    background-color: #dfdbdb;
+    width: 450px;
+}
+
+div.avito_title
+{}
+
+div.avito_price
+{}
+
+div.like
+{}
+
+div.avito_img
+{ display: flex;
+}
+
+div.avito_buttons
+{ display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 1em;
+}
+
+div.purpure_buttons
+{ display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: #8c4fe8;
+    color: white;
+    width: 50%;
+}
