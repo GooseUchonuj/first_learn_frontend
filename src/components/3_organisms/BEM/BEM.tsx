@@ -29,7 +29,7 @@ function BEM() {
           <h4><i>Важно!</i> В методологии БЭМ не существует элементов элементов, в матрёшек они не складываются. </h4>
           <p>Правила именования запрещают создавать элементы элементов, но в DOM-дереве элементы можно вкладывать друг в друга.</p>
           <img className="MMImage-Origin"
-               src="https://sneg.top/uploads/posts/2023-04/thumbs/1682079160_sneg-top-p-matreshki-kartinki-krasivo-3.jpg"
+               src="/img/matreshki.jpg"
                width={"40%"} alt="Picture background" aria-hidden="true"/>
         </ul>
       </ul>

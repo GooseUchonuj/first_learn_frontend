@@ -2,7 +2,7 @@ function HTML() {
   return (
 
     <section className={"monitor"}>
-      <h2 id={"html"}>html</h2>
+      <h2 id={"html"}>HTML</h2>
       <h3>Теги</h3>
       <ul>
         <li>div</li>

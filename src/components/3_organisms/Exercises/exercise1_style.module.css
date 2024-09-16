@@ -25,18 +25,32 @@ div.avito_img
 { display: flex;
 }
 
-div.avito_buttons
-{ display: flex;
+.avito_buttons {
+    display: flex;
     flex-direction: row;
     gap: 10px;
-    border-radius: 1em;
+    height: 300px;
 }
 
-div.purpure_buttons
-{ display: flex;
-    flex: 1;
+
+.purpure_buttons {
+    display: flex;
+    border: 0;
     align-items: center;
+    flex: 1 auto;
+    border-radius: 1em;
+    margin: 5px;
     background-color: #8c4fe8;
     color: white;
-    width: 50%;
+    min-width: 1vh;
+    height: 30px;
+    border: none;
+    text-align: center;
+    padding: min(1em);
+    font-size: 16px;
+}
+
+.purpure_buttons:hover {
+    cursor: pointer;
+
 }

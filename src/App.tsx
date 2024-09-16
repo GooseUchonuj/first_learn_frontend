@@ -28,6 +28,9 @@ function App() {
         <ul><a href={"#components"}>UiKit</a>
           <li></li>
         </ul>
+        <ul><a href={"#exercises"}>Упражнения</a>
+          <li><a href={"#Ex1"}>ex1</a></li>
+        </ul>
       </div>
       <div className={"page_wrapper"}>
         <div className={"sections"}>
