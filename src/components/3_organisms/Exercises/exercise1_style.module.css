@@ -10,10 +10,15 @@ div.avito_mainblock
     border-radius: 1em;
     background-color: #dfdbdb;
     width: 450px;
+    padding: 20px;
+    gap: 13px;
 }
 
 div.avito_title
-{}
+{
+    display: flex;
+    flex-direction: column;
+}
 
 div.avito_price
 {}
@@ -53,4 +58,10 @@ div.avito_img
 .purpure_buttons:hover {
     cursor: pointer;
 
+}
+
+h2.avito_title {
+    padding: 3px;
+    font-family: Arial;
+    text-align: center;
 }

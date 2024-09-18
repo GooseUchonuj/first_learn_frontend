@@ -7,8 +7,9 @@ function Ex1() {
       <h2 id={"exercises"}>Упражнения</h2>
       <h3 id={"Ex1"}>Exercise1</h3>
       <div className={styles.avito_mainblock}>
-        <div className={"avito_title"}><h2>Светильник Дракон</h2></div>
-        <div className={"avito_img"}></div>
+        <div className={"avito_title"}><h2 className={styles.avito_title}>Светильник Дракон</h2></div>
+        <div className={"avito_img"}><img src="/img/draco1.jpg"
+                                          width={"100%"} alt="Picture background" aria-hidden="true"/></div>
         <div className={"avito_price"}><h2>2 760 ₽</h2>
           <div className={"like"}></div>
         </div>
