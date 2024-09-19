@@ -10,16 +10,16 @@ function Ex1() {
         <div className={"avito_title"}><h2 className={styles.avito_title}>Светильник Дракон</h2></div>
         <div className={"avito_gallery"}>
 
-          </div>
+        </div>
 
-          <div className={"avito_img"}>
-            <div className={"frame_control"} id={"left"}>
-              <button></button>
-            <img src="/img/draco1.jpg" width={"100%"}
-                 alt="Picture background" aria-hidden="true"/>
-            <div className={"frame_control"} id={"right"}>
-              <button></button>
-            </div>
+        <div className={styles.avito_img}>
+          <div className={"frame_control"} id={"left"}>
+            <button></button>
+          </div>
+          <img src="/img/draco1.jpg" width={"100%"}
+            alt="Picture background" aria-hidden="true"/>
+          <div className={"frame_control"} id={"right"}>
+            <button></button>
           </div>
 
         </div>
