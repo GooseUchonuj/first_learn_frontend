@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'MTSwide-regular';
+  src: url('.\fonts\MTS Wide Regular\fonts\mtswide-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;}
+
 * {box-sizing: border-box;
   margin: 0;
   padding: 0;}
