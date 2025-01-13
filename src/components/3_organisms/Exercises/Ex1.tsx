@@ -39,11 +39,17 @@ function Ex1() {
         7. Примеры переходов для различных свойств */}
 
         <div className={"mts_form"}>
-          <div><h1 className={"mts_title"}>ЛИЧНЫЙ КАБИНЕТ</h1></div>
-          <div><p>Максимум возможностей </p>
-            <p>для управления счётом </p>
-            <p>и услугами мобильной связи</p></div>
-          <button> Войти </button>
+          <div className={"helper"}>
+            <div className={"mts_forText"}>
+              <div className={"mts_title"}><h1>ЛИЧНЫЙ КАБИНЕТ</h1></div>
+              <div className={"mts_text"}>
+              Максимум возможностей
+              для управления счётом
+              и услугами мобильной связи
+              </div>
+            </div>
+            <button className={"mts_button"}> Войти</button></div>
+          <div><img className={"mts_icon"} src={"/img/mts-01.svg"}/></div>
         </div>
       </div>
     </section>)

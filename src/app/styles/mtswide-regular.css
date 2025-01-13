@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'MTSWide-Regular';
+	src: url("../../assets/fonts/MTSWideRegular/mtswide-regular.eot") format('embedded-opentype'), /* IE < 9 */
+		url('../../assets/fonts/MTSWideRegular/mtswide-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../../assets/fonts/MTSWideRegular/mtswide-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../../assets/fonts/MTSWideRegular/mtswide-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../../assets/fonts/MTSWideRegular/mtswide-regular.svg#mtswide-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}

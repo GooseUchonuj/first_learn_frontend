@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'MTSwide-regular';
-  src: url('.\fonts\MTS Wide Regular\fonts\mtswide-regular.woff') format('woff');
+  src: url('../../../assets/fonts/MTSWideRegular/mtswide-regular.woff') format('woff');
+  src: url('../../../assets/fonts/MTSWideRegular/mtswide-regular.eot') format('eot');
+  src: url('../../../assets/fonts/MTSWideRegular/mtswide-regular.ttf') format('truetype');
+
   font-weight: normal;
   font-style: normal;}
 
@@ -132,7 +135,7 @@ justify-content: center;
 .mts_title
 {display: flex;
 flex-direction: column;
-  font-family: MTSWide-Regular, serif;
+  font-family: "MTSwide-regular", serif;
   text-align: left;
   font-size: 1.5em;
 }

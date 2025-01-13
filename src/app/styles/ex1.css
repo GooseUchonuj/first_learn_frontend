@@ -1,0 +1,55 @@
+/* mts blocks */
+
+.mts_form
+{display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 5rem;
+  width: 40%;
+}
+
+.mts_forText
+{display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40%;
+}
+
+.helper {
+  display:flex;
+  flex-direction:column;
+}
+
+.mts_title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "MTSwide-regular", serif;
+  text-align: left;
+  font-size: 1.5em;
+  width: 60%;
+}
+
+.mts_button  {
+  background-color: #FC0230;
+  border-radius: 0.5em;
+  font-family: Calibri, serif;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  height:45px;
+}
+
+.mts_text {
+  display: flex;
+  flex-direction: column;
+  font-family: Calibri, serif;
+  width: 40%;
+  font-size: 1.1em;
+}
+
+.mts_icon {
+  display: flex;
+  flex-direction: row;
+  width: 90px;
+}
