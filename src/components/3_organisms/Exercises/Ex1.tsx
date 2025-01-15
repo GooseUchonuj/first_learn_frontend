@@ -1,9 +1,22 @@
 
 import styles from "./exercise1_style.module.css"
-import React from "react";
-function Ex1() {
-  return (
+import { useState } from "react";
 
+
+
+function Ex1() {
+  const [name, setName] = useState('Nilson')
+  let firstName = "Hasan";
+
+  const onChangeFirst = () => {
+    firstName = "Vasa"
+  }
+
+  const onChangeLastName = () => {
+    setName(Math.random().toString(36).slice(2))
+  }
+
+  return (
     <section className={"monitor"}>
       <h2 id={"exercises"}>Упражнения</h2>
       <h3 id={"Ex1"}>Exercise1</h3>
@@ -54,8 +67,6 @@ function Ex1() {
           <div><img className={"mts_icon"} src={"/img/mts-01.svg"}/></div>
         </div>
       </div>
-
-
       <div className={styles.exercise_container2}>
         <div className={"article_academy"}>
           <img className={"icon_academy"} src={"/img/khan_academy-icon.png"}/>
@@ -77,12 +88,13 @@ function Ex1() {
         <div className={"teacher"}>
           <img className={"profile_photo"} src={"/img/Nadid.jpeg"}/>
           <div className={"with_prescription"}>
-            <h1 className={"h1_academy"}>Nahid Hasan</h1>
+            <h1 className={"h1_academy"}>{firstName} {name}</h1>
             <p className={"teacher_prescription"}>UX/UI Designer</p> 
           </div>
           <img src={"/img/rating.png"}/>
           <p className={"medium_text align-center"}>UI is the saddle, the stirrups, & the reins. UX is the feeling you get being able to ride the horse.</p>
-          <button className={"founder_button width-teacherButton"}>Follow</button>
+          <button onClick={onChangeFirst} className={"founder_button width-teacherButton"}>Change First Name</button>
+          <button onClick={onChangeLastName} className={"founder_button width-teacherButton"}>Change Last Name</button>
           <div className={"posts"}>
             <div className={"data_counter"}>
               <h1 className={"data_counter-text for_number"}>5896</h1>
