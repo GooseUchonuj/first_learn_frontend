@@ -1,3 +1,8 @@
+/* fonts */
 @import './mtswide-regular.css';
+@import 'openSans.css';
+
+/* styles */
 @import "main.css";
 @import "ex1.css";
+@import "ex2.css";

@@ -1,0 +1,150 @@
+/* --------------figma blocks Khan Academy */
+
+/* --------text formation (ack about universal parameters for blocks) */
+
+.typical
+{}
+
+.with_prescription
+{display: flex;
+  flex-direction: column;
+  gap: 10px;}
+
+.h1_academy
+{font-family:"Open Sans";
+  font-size: 1.6em;
+  color: #3B3F5C;
+}
+
+.small_text
+{font-family: "Open Sans";
+  font-weight: 380;
+  font-size: 1em;
+  color: #a7a8b5;
+  letter-spacing: 0.34px;
+}
+
+.medium_text
+{font-family: "Open Sans";
+  font-weight: 350;
+  font-size: 1.2em;
+  color: #3B3F5C;
+  line-height: 32px;}
+
+/* block 1 */
+
+.article_academy
+{display: flex;
+flex-direction: column;
+  gap: 24px;
+background-color: white;
+  width: 600px;
+  border-radius: 11px;
+  padding: 32px;}
+
+.icon_academy
+{display: flex;
+  width: 60px;
+height: 60px;}
+
+
+/* block 2 */
+
+.about_founder
+{display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: white;
+  border-radius: 11px;}
+
+ .big_photo
+ {display: flex;
+ width: 100%;
+ justify-content: center;
+ border-radius: 11px 11px 0px 0px;}
+
+ .founder_text
+ {display: flex;
+   flex-direction: column;
+   gap: 24px;
+   padding: 32px;}
+
+.founder_button
+{display: flex;
+justify-content: center;
+  padding: 16px;
+background-color: #5D5FEF;
+  border: none;
+border-radius: 6px;
+  color: white;
+  font-family:"Open Sans";
+  font-size: 1.4em;}
+
+/* block 3 */
+
+.teacher
+{display: flex;
+  gap: 24px;
+  padding: 32px;
+  flex-direction: column;
+  width: 500px;
+  background-color: white;
+  border-radius: 11px;
+  align-items: center;}
+
+.profile_photo
+{display: flex;
+  width: 200px;
+  height: 200px;
+border-radius: 100%;}
+
+.teacher_prescription {
+  font-family: "Open Sans";
+  font-weight: 390;
+  font-size: 1.3em;
+  color: #a7a8b5;
+  letter-spacing: 0.34px;
+  text-align: center;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.width-teacherButton {
+  width: 250px;
+}
+
+.posts {
+  display: flex;
+flex-direction: row;
+  gap: 55px;
+padding: 32px;
+  width: 400px;
+border-top: #cecfdc solid 1px;
+  justify-content: center;
+}
+
+.data_counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data_counter-text{
+  font-family: "Open Sans";
+  font-size: 1.2em;
+  color: #3B3F5C;
+  line-height: 38px;
+}
+
+.for_number {
+  font-weight: 400;
+  font-size: 1.5em;
+  letter-spacing: 0.5px;
+}
+
+.for_name {
+  font-weight: 380;
+  color: #a7a8b5;
+}

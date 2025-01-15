@@ -3,7 +3,12 @@
   src: url('../../../assets/fonts/MTSWideRegular/mtswide-regular.woff') format('woff');
   src: url('../../../assets/fonts/MTSWideRegular/mtswide-regular.eot') format('eot');
   src: url('../../../assets/fonts/MTSWideRegular/mtswide-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;}
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../../assets/fonts/Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;}
 
@@ -16,7 +21,17 @@
 .exercise_container
 {display: flex;
 flex-direction: row;
-gap: 40px}
+gap: 40px;}
+
+.exercise_container2
+{display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+  background-color: lightgray;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
 
 /* avito */
 

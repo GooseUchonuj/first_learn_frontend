@@ -1,5 +1,6 @@
 
 import styles from "./exercise1_style.module.css"
+import React from "react";
 function Ex1() {
   return (
 
@@ -43,16 +44,63 @@ function Ex1() {
             <div className={"mts_forText"}>
               <div className={"mts_title"}><h1>ЛИЧНЫЙ КАБИНЕТ</h1></div>
               <div className={"mts_text"}>
-              Максимум возможностей
-              для управления счётом
-              и услугами мобильной связи
+                Максимум возможностей
+                для управления счётом
+                и услугами мобильной связи
               </div>
             </div>
-            <button className={"mts_button"}> Войти</button></div>
+            <button className={"mts_button"}> Войти</button>
+          </div>
           <div><img className={"mts_icon"} src={"/img/mts-01.svg"}/></div>
         </div>
       </div>
-    </section>)
+
+
+      <div className={styles.exercise_container2}>
+        <div className={"article_academy"}>
+          <img className={"icon_academy"} src={"/img/khan_academy-icon.png"}/>
+          <div className={"with_prescription"}><h1 className={"h1_academy"}>Khan Academy</h1>
+            <p className={"small_text"}>Education company</p></div>
+          <p className={"medium_text"}>Learn for free about math, art, computer programming, economics, physics,
+            chemistry, biology, medicine, <br></br>finance, history, and more.</p>
+        </div>
+        <div className={"about_founder"}>
+          <img className={"big_photo"} src={"/img/big_photo.png"}/>
+          <div className={"founder_text"}>
+            <div className={"with_prescription"}><h1 className={"h1_academy"}>Salman Khan</h1>
+              <p className={"small_text"}>Founder and CEO of Khan Academy</p></div>
+            <p className={"medium_text"}>Salman Amin Khan (born 11 October 1976), known as Sal Khan, is a
+              Bangladeshi-American educator and the founder of Khan Academy</p>
+            <button className={"founder_button"}> Learn more</button>
+          </div>
+        </div>
+        <div className={"teacher"}>
+          <img className={"profile_photo"} src={"/img/Nadid.jpeg"}/>
+          <div className={"with_prescription"}>
+            <h1 className={"h1_academy"}>Nahid Hasan</h1>
+            <p className={"teacher_prescription"}>UX/UI Designer</p> 
+          </div>
+          <img src={"/img/rating.png"}/>
+          <p className={"medium_text align-center"}>UI is the saddle, the stirrups, & the reins. UX is the feeling you get being able to ride the horse.</p>
+          <button className={"founder_button width-teacherButton"}>Follow</button>
+          <div className={"posts"}>
+            <div className={"data_counter"}>
+              <h1 className={"data_counter-text for_number"}>5896</h1>
+              <p className={"data_counter-text for_name"}>Post</p>
+            </div>
+            <div className={"data_counter"}>
+              <h1 className={"data_counter-text for_number"}>8952</h1>
+              <p className={"data_counter-text for_name"}>Followers</p>
+            </div>
+            <div className={"data_counter"}>
+              <h1 className={"data_counter-text for_number"}>6545</h1>
+              <p className={"data_counter-text for_name"}>Likes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default Ex1
