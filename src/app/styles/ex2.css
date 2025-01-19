@@ -148,3 +148,67 @@ border-top: #cecfdc solid 1px;
   font-weight: 380;
   color: #a7a8b5;
 }
+
+/* block 4 */
+
+.teacher_rating {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 750px;
+  border-radius: 11px;
+  gap: 24px;
+  padding: 32px;
+}
+
+.text_rating{
+  display: flex;
+  flex-direction: column;
+}
+
+.rait_number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color:#5D5FEF;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.2em;
+  height: 30px;
+  width: 90px;
+
+}
+
+.prescription_in_right{
+  display: flex;
+  text-align: left;
+
+}
+
+/* block 5 */
+
+.citation {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  background-color: white;
+  border-radius: 11px;
+  gap: 24px;
+  padding: 32px;
+}
+.teacher_botton_citation{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+.photo100x100
+{width: 100px;
+height: 100px;}
+
+.mediun_text-weight{
+  font-weight: 600;
+}

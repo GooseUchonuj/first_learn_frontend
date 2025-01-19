@@ -85,14 +85,16 @@ function Ex1() {
             <button className={"founder_button"}> Learn more</button>
           </div>
         </div>
+
         <div className={"teacher"}>
           <img className={"profile_photo"} src={"/img/Nadid.jpeg"}/>
           <div className={"with_prescription"}>
             <h1 className={"h1_academy"}>{firstName} {name}</h1>
-            <p className={"teacher_prescription"}>UX/UI Designer</p> 
+            <p className={"teacher_prescription"}>UX/UI Designer</p>
           </div>
           <img src={"/img/rating.png"}/>
-          <p className={"medium_text align-center"}>UI is the saddle, the stirrups, & the reins. UX is the feeling you get being able to ride the horse.</p>
+          <p className={"medium_text align-center"}>UI is the saddle, the stirrups, & the reins. UX is the feeling you
+            get being able to ride the horse.</p>
           <button onClick={onChangeFirst} className={"founder_button width-teacherButton"}>Change First Name</button>
           <button onClick={onChangeLastName} className={"founder_button width-teacherButton"}>Change Last Name</button>
           <div className={"posts"}>
@@ -107,6 +109,30 @@ function Ex1() {
             <div className={"data_counter"}>
               <h1 className={"data_counter-text for_number"}>6545</h1>
               <p className={"data_counter-text for_name"}>Likes</p>
+            </div>
+          </div>
+        </div>
+
+        <div className={"teacher_rating"}>
+          <img className={"profile_photo"} src={"/img/Nadid.jpeg"}/>
+          <div className={"text_rating"}>
+            <div className={"with_prescription"}>
+              <h1 className={"h1_academy"}>Nadid Hasan</h1>
+              <p className={"teacher_prescription prescription_in_right"}>UX/UI Designer</p>
+              <div className={"rait_number"}>4.5</div>
+              <p className={"medium_text"}> UI is the saddle, the stirrups, & the reins. UX is the feeling you get being
+                able to ride the horse.</p>
+            </div>
+          </div>
+        </div>
+        <div className={"citation"}>
+          <p className={"medium_text mediun_text-weight"}>UI is the saddle, the stirrups, & the reins. UX is the feeling you
+            get being able to ride the horse.</p>
+          <div className={"teacher_botton_citation"}>
+            <img className={"profile_photo photo100x100"} src={"/img/Nadid.jpeg"}/>
+            <div className={"with_prescription"}>
+              <h1 className={"h1_academy"}>Nadid Hasan</h1>
+              <p className={"teacher_prescription prescription_in_right"}>UX/UI Designer</p>
             </div>
           </div>
         </div>
