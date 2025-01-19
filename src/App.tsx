@@ -6,10 +6,23 @@ import BEM from "./components/3_organisms/BEM/BEM.tsx"
 import UiKit from "./components/3_organisms/UiKit/UiKit.tsx"
 import Ex1 from "./components/3_organisms/Exercises/Ex1.tsx"
 
-function App() {
+
+
+
+function App(
+) {
+  const callAlert = () => {
+    alert ("я обязательно выучу")
+  }
+
+  const calcSum = (num1: number, num2: number) => {
+    console.log(num1+num2)
+  }
   return (
     <div className={"main-container"}>
       <div className={"menu"}>
+        <button onClick={callAlert}>Click</button>
+        <button onClick={()=>calcSum (10,2)}>Sum</button>
 
         <ul><a href={"#launching_app"}>Запуск приложения</a></ul>
         <ul><a href={"#git"}>Git</a>
@@ -33,21 +46,21 @@ function App() {
         </ul>
       </div>
       <div className={"page_wrapper"}>
-        <div className={"sections"}>
+      <div className={"sections"}>
 
-          <LaunchingApp />
+          <LaunchingApp/>
 
-          <Git />
+          <Git/>
 
-          <HTML />
+          <HTML/>
 
-          <CSS />
+          <CSS/>
 
-          <BEM />
+          <BEM/>
 
-          <UiKit />
+          <UiKit/>
 
-          <Ex1 />
+          <Ex1/>
 
           <section className={"monitor"}></section>
 
