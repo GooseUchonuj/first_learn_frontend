@@ -11,18 +11,26 @@ import Ex1 from "./components/3_organisms/Exercises/Ex1.tsx"
 
 function App(
 ) {
-  const callAlert = () => {
-    alert ("я обязательно выучу")
-  }
+  let callAlert = () => {
+    alert("я обязательно выучу")
+  };
 
   const calcSum = (num1: number, num2: number) => {
     console.log(num1+num2)
   }
+
+  // спросить у Славы, почему не работает с обратными кавычками
+
+  let MyName = () => {
+    alert(`${MyName} молодец!`)
+  };
+
   return (
     <div className={"main-container"}>
       <div className={"menu"}>
         <button onClick={callAlert}>Click</button>
-        <button onClick={()=>calcSum (10,2)}>Sum</button>
+        <button onClick={() => calcSum(10, 2)}>Sum</button>
+        <button onClick={MyName}>Support</button>
 
         <ul><a href={"#launching_app"}>Запуск приложения</a></ul>
         <ul><a href={"#git"}>Git</a>
@@ -46,7 +54,7 @@ function App(
         </ul>
       </div>
       <div className={"page_wrapper"}>
-      <div className={"sections"}>
+        <div className={"sections"}>
 
           <LaunchingApp/>
 
