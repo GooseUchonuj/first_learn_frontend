@@ -32,7 +32,6 @@ function App(
 
   const youBoss = () => {
     const Boss = confirm("Ты здесь главный?");
-
     alert(Boss); // true, если нажата OK
   }
 
