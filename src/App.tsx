@@ -7,30 +7,47 @@ import UiKit from "./components/3_organisms/UiKit/UiKit.tsx"
 import Ex1 from "./components/3_organisms/Exercises/Ex1.tsx"
 
 
-
-
 function App(
 ) {
-  let callAlert = () => {
+  const callAlert = () => {
     alert("я обязательно выучу")
   };
 
   const calcSum = (num1: number, num2: number) => {
-    console.log(num1+num2)
+    console.log(num1 + num2)
   }
 
   // спросить у Славы, почему не работает с обратными кавычками
 
-  let MyName = () => {
-    alert(`${MyName} молодец!`)
-  };
+  const someName = () => {
+
+    const myName = "Ты";
+    alert(`${myName} молодец! Старайся дальше`);
+
+  }
+  const whatAge = () => {
+    const age = prompt('Сколько тебе лет?', 0);
+    alert(`Тебе ${age} лет!`); // Тебе 100 лет!
+  }
+
+  const youBoss = () => {
+    const Boss = confirm("Ты здесь главный?");
+
+    alert(Boss); // true, если нажата OK
+  }
 
   return (
     <div className={"main-container"}>
       <div className={"menu"}>
         <button onClick={callAlert}>Click</button>
+        {/*простой alert при нажатии*/}
         <button onClick={() => calcSum(10, 2)}>Sum</button>
-        <button onClick={MyName}>Support</button>
+        {/*для консоли разработчика*/}
+        <button onClick={someName}>Support</button>
+        <button onClick={whatAge}>How old are you?</button>
+        {/*promt выводит поле для текста*/}
+        <button onClick={youBoss}>Are you boss?</button>
+        {/*confirm подтверждение true or false*/}
 
         <ul><a href={"#launching_app"}>Запуск приложения</a></ul>
         <ul><a href={"#git"}>Git</a>
