@@ -36,6 +36,66 @@ function App(
     alert(Boss); // true, если нажата OK
   }
 
+
+  const whenSlavasBirthday = () => {
+    const monthAndDay = prompt('Когда у Славы день рождения?');
+
+    if (monthAndDay == 22.01) {
+      alert( 'Вы правы!' );
+      return;
+    }
+    if (monthAndDay == "22/01") {
+      alert( 'Вы правы!' );
+      return;
+    }
+    if (monthAndDay == "22 january") {
+      alert('Вы правы!');
+      return;
+    }
+    if (monthAndDay == "22 января") {
+      alert('Вы правы!');
+      return;
+    }
+
+    if (monthAndDay != 22.01) {
+      alert('Неа!');
+    }  else if (monthAndDay != "22/01") {
+      alert( 'Неа!' );
+    }  else if (monthAndDay != "22 january") {
+      alert('Неа!');
+    }  else if (monthAndDay != "22 января") {
+      alert( 'Неа!' );
+    }
+  }
+
+  const todayYear = () => {
+    const year = prompt ("В каком году ты вернулась к изучению js?");
+
+    if (year == 2025) {
+      alert('Да, именно так');
+    }
+    else if (year < 2025) {
+      alert( 'Это слишком рано...' );
+    }
+    else if (year > 2025) {
+      alert( 'Поздновато (да и надеюсь, что продолжаю совершенствоваться)' );
+    }
+    else if (year == "Хрен его знает") {
+      alert( 'Понимаемо' );
+    }
+
+  }
+
+  let accessAllowed;
+  let age = prompt('Сколько вам лет?', '');
+
+  if (age > 18) {
+    accessAllowed = true;
+  } else {
+    accessAllowed = false;
+  }
+  alert(accessAllowed);
+
   return (
     <div className={"main-container"}>
       <div className={"menu"}>
@@ -48,6 +108,8 @@ function App(
         {/*promt выводит поле для текста*/}
         <button onClick={youBoss}>Are you boss?</button>
         {/*confirm подтверждение true or false*/}
+        <button onClick={whenSlavasBirthday}>When his birthday?</button>
+        <button onClick={todayYear}>Restart to js</button>
 
         <ul><a href={"#launching_app"}>Запуск приложения</a></ul>
         <ul><a href={"#git"}>Git</a>
