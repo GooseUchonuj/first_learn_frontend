@@ -86,15 +86,32 @@ function App(
 
   }
 
-  let accessAllowed;
-  let age = prompt('Сколько вам лет?', '');
+  const knockKnock = () => {
+    let hwoAreYou = prompt ("Кто там?")
+    // if (hwoAreYou == "Админ") {
+    //   prompt ("Пароль?");
+    // }
+    // else if (hwoAreYou!== "Админ") {
+    //   alert ("Я вас не знаю")
+    //     }
+    // else if (hwoAreYou!== null) {
+    //   alert ("Отменено")
+    //     }
+    if (hwoAreYou == "Админ") {
+      let password  = prompt("Пароль?");
+      if (password == "Не спрашивай пароль у командира") {
+        alert("Добро пожаловать!")
+      };
+      if (password !== "Не спрашивай пароль у командира") {
+        alert("Неверный пароль!")
+      }
+    }
+    if (hwoAreYou !== "Админ") {
+      alert("Я вас не знаю")
+    }
 
-  if (age > 18) {
-    accessAllowed = true;
-  } else {
-    accessAllowed = false;
+
   }
-  alert(accessAllowed);
 
   return (
     <div className={"main-container"}>
@@ -110,6 +127,7 @@ function App(
         {/*confirm подтверждение true or false*/}
         <button onClick={whenSlavasBirthday}>When his birthday?</button>
         <button onClick={todayYear}>Restart to js</button>
+        <button onClick={knockKnock}>Тук-тук</button>
 
         <ul><a href={"#launching_app"}>Запуск приложения</a></ul>
         <ul><a href={"#git"}>Git</a>
