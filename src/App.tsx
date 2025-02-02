@@ -109,8 +109,14 @@ function App(
     if (hwoAreYou !== "Админ") {
       alert("Я вас не знаю")
     }
+  }
 
+  const result = () => {
 
+  let num1 = 10,
+      num2 = 20,
+      result = num1 ?? num2
+    alert(result)
   }
 
   return (
@@ -128,6 +134,7 @@ function App(
         <button onClick={whenSlavasBirthday}>When his birthday?</button>
         <button onClick={todayYear}>Restart to js</button>
         <button onClick={knockKnock}>Тук-тук</button>
+        <button onClick={result}> Проверка </button>
 
         <ul><a href={"#launching_app"}>Запуск приложения</a></ul>
         <ul><a href={"#git"}>Git</a>
