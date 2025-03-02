@@ -102,3 +102,20 @@ ul.point {
 .about_rem
 {font-size: 0.9em;}
 
+.group_of_js-button {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.column_of_js-button {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.js-button
+{display: flex;
+    height: 25px;
+justify-content: center;
+align-items: center;}
