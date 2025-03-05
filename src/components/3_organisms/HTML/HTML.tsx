@@ -1,4 +1,4 @@
-// $ git add. $ git commit -m $ git push
+// && git add. && git commit -m && git push
 
 function HTML() {
   const callAlert = () => {
@@ -544,35 +544,45 @@ function HTML() {
      После, игроки поочерёдно вычитают из загаданного числа от 1 до 3х.
      Выигрывает последний игрок, у кого после вычитания получится число 0 или меньше`);
 
-    const playerNumber = prompt("Если готовы начать, загадайте и впишите число");
+    const playerNumber = prompt("Если готовы начать, загадайте и впишите число больше пяти");
     if (playerNumber > 5) {
       alert(`Отлично! Ваше число ${playerNumber}.`)
     }
-    else if (playerNumber = undefined) {
+    else if (playerNumber < 5) {
+      alert("Мой друг, загадайте число больше, иначе будет неинтересно играть")
+    }
+    else if (playerNumber === undefined || isNaN(+playerNumber)) {
       alert("Хорошо ) приходите позже!")
+      return;
     }
 
     const playerAction = +prompt(`Вычтите из ${playerNumber} число от 1 до 3х`)
-    while (playerNumber > 0) {
+
+    if (playerAction > 4) // от сюда действие должно вернуться к const playerAction
+      {
+      alert("Айяй. Вычитаем только от 1 до 3х")
+    }
+    else if (playerAction === undefined || null || false || isNaN(+playerAction)) {
+      alert("Хорошо ) приходите позже!")
+      return;
+    }
+
+    for (playerNumber > 0; playerAction > 0; playerAction < 4) {
       const minus = playerNumber - playerAction;
       const nextAction = prompt(`Осталось ${minus}. Игрок , ваша очередь`)
-      if (nextAction = NaN || null || false) {
+      if (nextAction === null || false || isNaN (+nextAction) ) {
         alert("Хорошо! Сыграем позже")
         break;
       }
-
+      if (playerNumber === 0) {
+        alert ("Поздравляю, игрок! Победа ваша!")
+      }
     }
+    // const restart = prompt("Хотите сыграть ещё раз? Да/Нет")
+    // if (restart === null || false || isNaN (+restart) ) {
+    // alert("Хорошо ) приходите позже!")
+    // }
 
-  //   const startGame = +prompt("Если готовы начать, загадайте и впишите число")
-  //   if (startGame === true || startGame === Number) {
-  //     startGame == +playerNumber;
-  //     prompt(`Отлично! Ваше число ${playerNumber}.`)
-  //
-  //   const playerAction = +prompt(`Вычтите из ${playerNumber} число от 1 до 3х`)
-  //   while (playerNumber > 0) {
-  //     playerAction = playerAction >= 1 || playerAction <= 3;  // сколько вычтет пользователь, ограничение от 1 до 3х
-  //     const minus = alert(playerNumber - playerAction);
-  //   }
   }
 
   return (
@@ -593,7 +603,7 @@ function HTML() {
         <li>footer</li>
       </ul>
       <h3>Атрибуты</h3>
-      <h3>Java script</h3>
+      <h3 id={"java"}>Java script</h3>
       <div className={"group_of_js-button"}>
         <div className={"column_of_js-button"}>
           <button className={"js-button"} onClick={callAlert}>Click</button>

@@ -19,7 +19,7 @@ function App(
           <li><a href={"#push"}>Push - сохранение изменений </a></li>
         </ul>
         <ul><a href={"#html"}>HTML</a>
-          <li></li>
+          <li><a href={"#java"}>Java script</a></li>
         </ul>
         <ul><a href={"#css"}>CSS</a>
           <li></li>
