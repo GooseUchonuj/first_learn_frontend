@@ -36,8 +36,8 @@ function App(
           </ul>
         </ul>
         <ul><a href={"#java"}>Java script</a>
-          <li href={"#AlertPrompt"}>Exercises 1 (alert & prompt)</li>
-          <li href={"#Elements_Style"}>Exercises 2 (elements & style_change)</li>
+          <li> <a href={"#AlertPrompt"}>Exercises 1 (alert & prompt)</a></li>
+          <li> <a href={"#Elements_Style"}>Exercises 2 (elements & style_change)</a></li>
         </ul>
         <ul><a href={"#bem"}>BEM</a>
           <li></li>
