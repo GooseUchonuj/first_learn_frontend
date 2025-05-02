@@ -29,6 +29,7 @@ import GuessGame from "../JavaScript/components/1_AlertAndPrompt/GuessGame.tsx";
 import Randomizer from "../JavaScript/components/1_AlertAndPrompt/Randomize.tsx";
 import Randomizer_Improve from "../JavaScript/components/1_AlertAndPrompt/Randomizer_Improve.tsx";
 import MinusNumber from "./components/1_AlertAndPrompt/MinusNumber.tsx";
+import ActionForEx2 from "./components/2_Elements_StyleChange/ActionForEx2.tsx";
 
 // import GuesThisNumber from "./components/2_Elements_StyleChange/GuesThisNumber.tsx";
 
@@ -81,27 +82,7 @@ function Java() {
         </div>
       </div>
       <h3 id={"Elements_Style"}>Exercise 2/ elements & style_change</h3>
-
-      <div className={"exerciseContainer"}>
-        <div className={"gameStartContainer"}>
-          <div className={"startButton"}> Новая игра </div>
-          <div> Число между 1 и {}</div>
-        </div>
-        <div className={"desireContainer"}>
-          <div> Угадай число </div>
-          <div className={"desireNumber"}></div>
-        </div>
-        <div className={"promptContainer"}>
-          <div className={"inputLineContain"}>
-            <div> Начните угадывать... </div>
-            <div className={"inputLine"}></div>
-          </div>
-          <div className={"attempt"}>
-            <p>Кол-во попыток: {}</p>
-            <p>Рекорд: {}</p>
-          </div>
-        </div>
-      </div>
+      <ActionForEx2/>
       <ul>
         <li>Компоненты</li>
         <li>React</li>

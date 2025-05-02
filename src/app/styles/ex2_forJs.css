@@ -2,7 +2,7 @@
 .exerciseContainer {    /* - общий, большой контейнер для упражнения - */
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 95px;
   width: 100%;
   height: 720px;
   padding: 50px;
@@ -18,7 +18,7 @@
   gap: max(70%, 40%);
 }
 
-.startButton {
+.button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,6 +28,14 @@
   background-color: #dfdbdb;
   color: black;
   border-radius: 15px;
+  border: none;
+  font-size: 12pt;
+}
+
+#CheckButton {
+  display: flex;
+  width: 115px;
+  height: 45px;
 }
 
 .desireContainer { /* - контейнер для угаданного числа и указания что делать - */
@@ -42,9 +50,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 130px;
   height: 130px;
   background-color: #dfdbdb;
+  color: #424a57;
+  font-size: 40pt;
   border-radius: 15px;
   border: limegreen 3px solid;
 }
@@ -70,10 +81,13 @@
   flex-direction: column;
   border: 3px solid lightgray;
   border-radius: 15px;
+  padding: 10px;
+  text-align: center;
   width: 150px;
   height: 70px;
   background-color: #424a57;
   color: #dfdbdb;
+  font-size: 12pt;
 }
 
 .inputButton {
@@ -88,7 +102,7 @@
 .attempt {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: flex-start;
   text-align: left;
 }
